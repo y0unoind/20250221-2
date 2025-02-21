@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/01.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        window.onload = () => {
+            var swiper = new Swiper(".visual-swiper", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 2500, //2.5
+                    disableOnInteraction: false,
+                },
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <seciton class="visual">
+        <!-- Swiper -->
+        <div class="swiper visual-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/swiper-slide/img/1.jpg" alt="">
+                    <div class="text">
+                        <h2>visual_slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text -->
+                </div> <!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <img src="/swiper-slide/img/2.jpg" alt="">
+                    <div class="text">
+                        <h2>visual_slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text -->
+                </div> <!-- swiper-slide -->
+
+                <div class="swiper-slide">
+                    <img src="/swiper-slide/img/3.jpg" alt="">
+                    <div class="text">
+                        <h2>visual_slide</h2>
+                        <a href="#">바로가기</a>
+                    </div> <!-- text -->
+                </div> <!-- swiper-slide -->
+
+            </div><!--  swiper-wrapper -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </seciton> <!-- visual -->
+</body>
+
+</html>
